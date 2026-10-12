@@ -7,7 +7,7 @@ def solution(phone_book):
     # 정렬을 하면 이웃한 번호만 비교하면 됨!!
     phone_book.sort()
     
-    for i in range(0, len(phone_book)): # [0, 3) i가 2일 때 문제
+    for i in range(0, len(phone_book)): 
         if i + 1 == len(phone_book):
             break
         if phone_book[i+1].startswith(phone_book[i]):
