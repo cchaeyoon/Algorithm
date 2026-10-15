@@ -1,10 +1,10 @@
 # [level 0] 숫자 비교하기 - 120807 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120807?language=python3) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120807) 
 
 ### 성능 요약
 
-메모리: 11.4 MB, 시간: 0.00 ms
+메모리: 72.4 MB, 시간: 0.02 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2026년 06월 04일 00:32:34
+2026년 10월 15일 14:33:23
 
 ### 문제 설명
 
