@@ -1,0 +1,16 @@
+SELECT E.EMP_NO, E.EMP_NAME, 
+       # 평균 점수를 구해야함
+       CASE WHEN AVG(G.SCORE) >= 96 THEN 'S'
+            WHEN AVG(G.SCORE) >= 90 THEN 'A'
+            WHEN AVG(G.SCORE) >= 80 THEN 'B'
+            WHEN AVG(G.SCORE) < 80 THEN 'C'
+       END AS GRADE, 
+       CASE WHEN AVG(G.SCORE) >= 96 THEN E.SAL * (20/100)
+            WHEN AVG(G.SCORE) >= 90 THEN E.SAL * (15/100)
+            WHEN AVG(G.SCORE)>= 80 THEN E.SAL * (10/100)
+            WHEN AVG(G.SCORE) < 80 THEN E.SAL * 0
+       END AS BONUS
+FROM HR_EMPLOYEES E
+JOIN HR_GRADE G ON E.EMP_NO = G.EMP_NO
+GROUP BY G.EMP_NO
+ORDER BY EMP_NO ASC;
